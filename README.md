@@ -6,7 +6,7 @@
 
 # 使い方
 1. GitHubのトークンを作成
-    -  [Personal access tokens (classic)](https://github.com/settings/tokens/new)から、**notifications**の権限でトークンを作成
+    -  [Personal access tokens (classic)](https://github.com/settings/tokens/new)から、**repo**の権限でトークンを作成
 1. `prrev configure`
     - 作成したトークンを入力
     - ホームディレクトリの`.prrev.token`に保存される
