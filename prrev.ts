@@ -93,4 +93,9 @@ const pullRequestResponse = await fetchWithToken(
   selectedReviewRequest.subject.url,
 );
 const pullRequest: PullRequest = await pullRequestResponse.json();
-await $`open ${pullRequest.html_url}`;
+
+if (Deno.build.os === "windows") {
+  await $`cmd /c start ${pullRequest.html_url}`;
+} else {
+  await $`open ${pullRequest.html_url}`;
+}
