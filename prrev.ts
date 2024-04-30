@@ -29,7 +29,7 @@ try {
   Deno.exit(1);
 }
 if (!token) {
-  console.log(`Token file ${tokenFile} is empty.`);
+  console.log(`Token file ${tokenFile} is empty. Run 'prrev configure'.`);
   Deno.exit(1);
 }
 
